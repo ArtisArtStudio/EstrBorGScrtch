@@ -247,11 +247,11 @@ var pct =new Array(9);
         // }
         surname = params.get('surname');
         if (surname !=null && surname.replace(/\s/g, '').length) {
-            $("#baby").text('baby ' + surname+'!');}
+            $("#baby").text("Bunny " + surname + " ");}
         else {
-            $("#baby").text('the baby!');
-            surname="the";
             document.getElementById('surname').style.fontWeight="normal";
+            $('#baby').css('font-weight', 'normal');
+
         }
         /* $(document).ready(function(){
             // function scope wavesurfer
